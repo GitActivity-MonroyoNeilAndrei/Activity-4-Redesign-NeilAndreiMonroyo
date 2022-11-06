@@ -9,12 +9,35 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <div class="yahoo-logo"><img src=""></div>
-            <div class="yahoo-text"><img src=""></div>
-            <div class="messenger-text"><img src=""></div>
+        <div class="container__logo container__logo--purple">
+            <div class="container__logo__yahoo-logo"><img src="images/yahoo-logo.png"></div>
+            <div class="container__logo__yahoo-text"><img src="images/yahoo-text.png"></div>
+            <div class="container__logo__messenger-text"><img src="images/messenger-bold-text.png"></div>
         </div>
-        <div class="form"></div>
+        <div class="container__form">
+            <label class="input-label" for="yahoo-id">Yahoo ID:</label>
+            <input class="container__form__textbox" type="text" name="yahoo-id">
+            <label class="input-label" for="password">Password:</label>
+            <input class="container__form__textbox" type="text" name="password">
+            <div class="checkboxes">
+                <div class="checkboxes__checkbox">
+                    <input type="checkbox" name="remember">
+                    <label for="remember">Remember my ID & password</label>
+                </div>
+                <div class="checkboxes__checkbox">
+                    <input type="checkbox" name="sign-automatically">
+                    <label for="sign-automatically">Sign in automatically</label>
+                </div>
+                <div class="checkboxes__checkbox">
+                    <input type="checkbox" name="sign-invisible">
+                    <label for="sign-invisible">Sign in as invisible to everyone</label>
+                </div>
+            </div>
+            <button class="button--purple">Sign In</button>
+            <a class="anchor-tags" href="#">Get a new Yahoo ID...</a>
+            <a class="anchor-tags" href="#">Forgot your password?</a>
+            
+        </div>
     </div>
 </body>
 </html>

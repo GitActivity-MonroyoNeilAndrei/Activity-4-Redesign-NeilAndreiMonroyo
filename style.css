@@ -4,43 +4,111 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: #DCDCDC;
+}
+
 .container {
     border: 1px solid black;
-    border-radius: 10px;
+    box-shadow: -12px -12px 17px #FFFFFF, 12px 12px 17px #6C6C6C;
+    border-radius: 12px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    height: 350px;
-    max-width: 800px;
+    height: 400px;
+    max-width: 700px;
     margin: 20vh auto;
 }
 
-.logo {
+.container__logo {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     box-sizing: inherit;
     background-color: pink;
     width: 50%;
     height: 100%;
-    background-image: linear-gradient(157.81deg, rgba(109, 20, 198, 0.79) 45.59%, rgba(3, 1, 4, 0.8) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
 }
 
-.form {
+.container__logo--purple {
+    background-image: linear-gradient(157.81deg, rgba(109, 20, 198, 0.79) 45.59%, rgba(3, 1, 4, 0.8) 100%);
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.container__logo__yahoo-logo {
+    width: 15em;
+    padding: 10px
+}
+
+.container__logo__yahoo-text {
+    width: 15em;
+}
+
+.container__logo__messenger-text {
+    width: 11em;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
     box-sizing: inherit;
     width: 50%;
     height: 100%;
+    padding: 2em 2em 1em;
+}
+
+.input-label {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container__form__textbox {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 5px 0;
+    height: 1.8em;
 }
 
 
+.checkboxes {
+    padding-left: .5em;
+    display: flex;
+    flex-direction: column;
+}
 
+.checkboxes__checkbox {
+    margin-top: 10px;
+}
 
+button {
+    border: 1px solid black;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
 
+.button--purple {
+    background-image: linear-gradient(180deg, rgba(87, 35, 116, 0.8) 0%, rgba(26, 7, 36, 0.8) 100%);
+}
 
-
-
-
-
-
-
-
+.anchor-tags {
+    text-decoration: none;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 8px;
+    text-align: center;
+}
 
 
 
